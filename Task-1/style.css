@@ -1,0 +1,41 @@
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+#container {
+    width: 457px;
+    height: 138px;
+    /* border: 1px solid black; */
+    display: flex;
+}
+
+img {
+    height: 130px;
+    width: 130px;
+    margin-right: 14px;
+}
+
+#username {
+    font-weight: bold;
+    font-size: 20px;
+    margin-bottom: 14px;
+}
+
+#content {
+    font-size: 20px;
+    margin-bottom: 24px;
+}
+
+.mr-24 {
+    margin-right: 24px;
+    color: #858991;
+}
+
+#icon-container span i {
+    margin-right: 14px;
+    font-size: 20px;
+}
+
+.text-size {
+    font-size: 20px;
+}

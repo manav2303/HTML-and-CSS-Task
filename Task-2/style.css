@@ -1,0 +1,53 @@
+body {
+    background-color: lightyellow;
+}
+
+b {
+    text-transform: uppercase;
+}
+
+h1 {
+    text-align: center;
+    background-color: red;
+    height: 3.5rem;
+}
+
+h1 p {
+    color: lightyellow;
+    background-color: darkred;
+    letter-spacing: 3px;
+    font-size: 2rem;
+    font-style: italic;
+    height: 80%;
+    width: 100%;
+}
+
+h2 {
+    background-color: green;
+    color: white;
+}
+
+ul {
+    color: darkred;
+}
+
+a {
+    text-decoration: none;
+    color: blueviolet;
+}
+
+img {
+    border: 2px dotted silver;
+}
+
+h3 {
+    color: grey;
+}
+
+table {
+    background-color: lightgray;
+}
+
+textarea {
+    overflow-y: scroll;
+}
