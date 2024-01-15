@@ -1,0 +1,223 @@
+@font-face {
+    font-family: "Quicksand";
+    font-display: optional;
+    src: url("../svgs/Quicksand-VariableFont_wght.woff2") format("woff2");
+}
+
+body {
+    margin: 0;
+    background-color: #EEEEEE;
+    font-family: 'Quicksand', sans-serif;
+}
+
+header {
+    height: 56px;
+    border-bottom: 2px solid #31B9E4;
+    background: transparent url('../images/header\ pattern\ image.png');
+}
+
+
+header img {
+    width: 134px;
+    height: 36px;
+    margin: 11px 0px 11px 24px;
+    /* filter: grayscale(100%) brightness(1000%); */
+}
+
+main {
+    width: 488px;
+    height: 575px;
+    margin: auto;
+    margin-top: 56px;
+    background-color: #FFFFFF;
+    border-top: 4px solid #3AC7EC;
+    display: flex;
+    flex-direction: column;
+}
+
+form {
+    padding: 20px;
+    font-weight: 550;
+}
+
+
+.form-title {
+    margin-top: 20px;
+    display: flex;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 28px;
+}
+
+.form-title p {
+    margin: auto;
+    color: #222222;
+}
+
+.radio-btn-container {
+    margin-top: 32px;
+}
+
+.input-icon {
+    margin: 0;
+    width: 18px;
+    height: 18px;
+}
+
+.radio-btn-container input {
+    margin-right: 8px;
+    accent-color: #1F7A54;
+}
+
+.radio-btn-container label {
+    margin-right: 32px;
+    font: normal normal medium 16px/20px Quicksand;
+}
+
+.state-selector {
+    margin-top: 23px;
+}
+
+.state-selector p {
+    margin: 0;
+    color: #666666;
+    font-size: 12px;
+    line-height: 16px;
+}
+
+.state-selector select {
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid #000000;
+    color: #333333;
+    font-size: 16px;
+}
+
+.district-selector {
+    margin-top: 44px;
+}
+
+.username {
+    margin-top: 60px;
+}
+
+.username input {
+    color: #666666;
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid #000000;
+    font-size: 16px;
+    line-height: 20px;
+}
+
+.forgot-labels {
+    float: right;
+    color: #1F7A54;
+    font-size: 14px;
+    line-height: 18px;
+}
+
+.password-field {
+    display: flex;
+    width: 100%;
+}
+
+.password-field i {
+    border-bottom: 1px solid #000000;
+    color: #1F7A54;
+}
+
+.remember-me {
+    margin-top: 26px;
+}
+
+.remember-me input {
+    color: #222222;
+    font-size: 16px;
+    line-height: 20px;
+    accent-color: #1F7A54;
+    font-weight: 700;
+}
+
+.submit-btn {
+    margin-top: 34px;
+    text-align: center;
+    margin-bottom: 25px;
+
+}
+
+.submit-btn button {
+    height: 40px;
+    width: 216px;
+    background-color: #3FD28B;
+    border: none;
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: 550;
+}
+
+.m-top {
+    margin: auto;
+    margin-top: 32px;
+    text-align: center;
+}
+
+.m-top a {
+    text-decoration: none;
+    color: #1F7A54;
+    font-weight: 550;
+    font-size: 14px;
+    line-height: 18px;
+}
+
+.b-left {
+    margin-left: 10px;
+    padding-left: 10px;
+    border-left: 1px solid #0000001F;
+}
+
+
+
+.flex {
+    display: flex;
+}
+
+.footer-main {
+    margin-top: 16px;
+    background-color: #E0E1E1;
+    padding: 8px 0;
+    height: 40px;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.footer-image {
+    width: 90px;
+    height: 24px;
+}
+
+.footer-content {
+    color: #616161;
+    font-size: 16px;
+}
+
+.vertical-line-16 {
+    width: 0px;
+    height: 24px;
+    border-left: 1px solid #0000001F;
+    margin: 0 16px;
+}
+
+.vertical-line-8 {
+    width: 0px;
+    height: 18px;
+    border-left: 1px solid #0000001F;
+    margin: 0 8px;
+}
+
+@media screen and (max-width: 768px) {
+    .m-top {
+        margin-top: 235px;
+    }
+}

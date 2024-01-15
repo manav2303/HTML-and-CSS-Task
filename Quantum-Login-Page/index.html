@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Log - In</title>
+        <link rel="stylesheet" href="style.css">
+        <!-- QuickSand Font -->
+        <link rel="preload" href="../svgs/Quicksand-VariableFont_wght.woff2" as="font" type="font/woff2"
+            crossorigin="anonymous">
+
+        <!-- Font-Awesome -->
+        <script src="https://kit.fontawesome.com/35322d8823.js" crossorigin="anonymous"></script>
+    </head>
+
+    <body>
+        <header>
+            <img src="../svgs/logo used in header.svg" alt="Quantum-Logo">
+        </header>
+        <main>
+            <form action="">
+                <div class="form-title">
+                    <img src="../svgs/back.svg" alt="">
+                    <p>Log in with Quantum</p>
+                </div>
+                <div class="radio-btn-container">
+                    <input type="radio" name="school" id="district" class="input-icon">
+                    <label for="district" class="school-label">District</label>
+                    <input type="radio" name="school" id="independent" class="input-icon">
+                    <label for="independent" class="school-label">Independent</label>
+                </div>
+                <div class="state-selector">
+                    <p>State*</p>
+                    <select name="State" id="state" class="state-district-select">
+                        <option value="Select State" disabled selected>Select State</option>
+                        <option value="Gujarat">Gujarat</option>
+                        <option value="Maharashtra">Maharashtra</option>
+                        <option value="Rajasthan">Rajasthan</option>
+                        <option value="Punjab">Punjab</option>
+                    </select>
+                </div>
+                <div class="state-selector district-selector">
+                    <p>District*</p>
+                    <select name="State" id="state" class="state-district-select">
+                        <option value="Select State" disabled selected>Select District</option>
+                        <option value="Gujarat">Mumabi</option>
+                        <option value="Maharashtra">Surat</option>
+                        <option value="Rajasthan">Pune</option>
+                        <option value="Punjab">Baroda</option>
+                    </select>
+                </div>
+                <div class="username">
+                    <input type="text" name="Username" id="username" placeholder="Username/Email ID*">
+                    <div class="forgot-labels">FORGOT USERNAME?</div>
+                </div>
+                <div class="username">
+                    <div class="password-field">
+                        <input type="password" name="Username" id="username" placeholder="Password*">
+                        <i class="fa-solid fa-eye"></i>
+                    </div>
+                    <div class="forgot-labels">FORGOT PASSWORD?</div>
+                </div>
+                <div class="remember-me">
+                    <input type="checkbox" name="RememberMe" id="rememberme" class="input-icon">
+                    <label for="rememberme">Remember Me</label>
+                </div>
+                <div class="submit-btn">
+                    <button type="submit">LOG IN</button>
+                </div>
+            </form>
+        </main>
+        <div class="m-top">
+            <a href="">About</a>
+            <a href="" class="b-left">Contact Us</a>
+        </div>
+
+        <footer>
+            <div class="flex footer-main">
+                <img class="footer-image" src="../svgs/logo used in footer.svg" alt="Footer Logo">
+                <div class="vertical-line-16"></div>
+                <div class="footer-content">
+                    Copyright &#169; 2020-2021 <b>Zeus Systems Pvt. Ltd.</b> All rights reserved.
+                </div>
+            </div>
+        </footer>
+    </body>
+
+</html>
