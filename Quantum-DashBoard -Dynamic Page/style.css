@@ -68,18 +68,23 @@ header {
     border-bottom: 4px solid #FFFFFF;
 }
 
-.announcemnet-container {
+.dropdown-menu-announcemnet {
     position: absolute;
     top: 56px;
     right: 137px;
     display: flex;
     flex-direction: column;
+    height: 500px;
+    visibility: hidden;
+}
+
+.announcemnet-container {
+    display: flex;
+    flex-direction: column;
     color: #222222;
     width: 315px;
-    height: 500px;
     overflow-y: auto;
     z-index: 300;
-    visibility: hidden;
 }
 
 
@@ -145,9 +150,7 @@ header {
     margin: 0;
 }
 
-
-
-.dropdown-menu-footer {
+.announcement-footer {
     /* width: 315px; */
     height: 48px;
     display: flex;
@@ -169,7 +172,7 @@ header {
 
 }
 
-.dropdown-menu-footer span {
+.announcement-footer span {
     padding: 15px 0px;
 }
 
@@ -177,20 +180,24 @@ header {
     color: #6E6E6E;
 }
 
-
-/* Alert dropdown CSS */
-.alert-container {
+.dropdown-menu-alert {
     position: absolute;
     top: 56px;
     right: 188px;
     display: flex;
     flex-direction: column;
-    color: #222222;
-    width: 315px;
     height: 500px;
+    width: 315px;
+    visibility: hidden;
+}
+
+/* Alert dropdown CSS */
+.alert-container {
+    display: flex;
+    flex-direction: column;
+    color: #222222;
     overflow-y: auto;
     z-index: 300;
-    visibility: hidden;
 }
 
 .alert {
@@ -220,16 +227,16 @@ header {
     line-height: 17px;
 }
 
-/* .alert-footer {
-    display: absolute;
-    top: 590px;
-    left: 265px;
+.alert-footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     color: #1F7A54;
     text-align: center;
     background-color: #FFFFFF;
     height: 64px;
     z-index: 200;
-} */
+}
 
 .alert-footer span {
     padding: 15px 0px;
