@@ -4,6 +4,10 @@
     src: url("../svgs/Quicksand-VariableFont_wght.woff2") format("woff2");
 }
 
+p {
+    margin: 0;
+}
+
 body {
     margin: 0;
     background-color: #EEEEEE;
@@ -63,6 +67,180 @@ header {
     color: #FFFFFF;
     border-bottom: 4px solid #FFFFFF;
 }
+
+.announcemnet-container {
+    position: absolute;
+    top: 56px;
+    right: 137px;
+    display: flex;
+    flex-direction: column;
+    color: #222222;
+    width: 315px;
+    height: 500px;
+    overflow-y: auto;
+    z-index: 300;
+    visibility: hidden;
+}
+
+
+
+.announcemnet {
+    font-size: 12px;
+    line-height: 15px;
+    height: 64px;
+    padding: 16px;
+    background-color: #FFFFFF;
+    border-bottom: 1px solid #2E2E2E;
+}
+
+
+.display-flex {
+    display: flex;
+    justify-content: space-between;
+    font-size: 12px;
+    line-height: 16px;
+}
+
+.attach-file-svg {
+    width: 15px;
+    height: 18px;
+}
+
+
+
+/* Scroll bar */
+.alert-container::-webkit-scrollbar,
+.announcemnet-container::-webkit-scrollbar {
+    width: 4px;
+}
+
+.alert-container::-webkit-scrollbar-thumb,
+.announcemnet-container::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 2px;
+}
+
+.alert-container::-webkit-scrollbar-track,
+.announcemnet-container::-webkit-scrollbar-track {
+    background-color: transparent;
+}
+
+.announcemnet p {
+    margin: 8px 0px;
+    font-size: 14px;
+    line-height: 18px;
+}
+
+
+
+.date-file {
+    font-size: 12px;
+    line-height: 18px;
+    color: #6E6E6E;
+    display: flex;
+    justify-content: space-between;
+}
+
+.date-file p {
+    margin: 0;
+}
+
+
+
+.dropdown-menu-footer {
+    /* width: 315px; */
+    height: 48px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    background-color: #FFFFFF;
+    /* padding: 15px 37px; */
+    color: #1F7A54;
+    z-index: 100;
+    font-size: 14px;
+    line-height: 18px;
+}
+
+.vertical-line {
+    width: 0.5px;
+    height: 5px;
+    background-color: #6E6E6E;
+
+}
+
+.dropdown-menu-footer span {
+    padding: 15px 0px;
+}
+
+.color-grey {
+    color: #6E6E6E;
+}
+
+
+/* Alert dropdown CSS */
+.alert-container {
+    position: absolute;
+    top: 56px;
+    right: 188px;
+    display: flex;
+    flex-direction: column;
+    color: #222222;
+    width: 315px;
+    height: 500px;
+    overflow-y: auto;
+    z-index: 300;
+    visibility: hidden;
+}
+
+.alert {
+    font-size: 12px;
+    line-height: 15px;
+    height: 91px;
+    padding: 16px;
+    background-color: #FFFFFF;
+    border-bottom: 1px solid #2E2E2E;
+}
+
+.display-flex p {
+    font-size: 14px;
+    line-height: 18px;
+    width: 90%;
+}
+
+.alert>p {
+    margin: 8px 0px;
+    font-size: 12px;
+    line-height: 16px;
+}
+
+.alert>span {
+    float: right;
+    font-size: 12px;
+    line-height: 17px;
+}
+
+/* .alert-footer {
+    display: absolute;
+    top: 590px;
+    left: 265px;
+    color: #1F7A54;
+    text-align: center;
+    background-color: #FFFFFF;
+    height: 64px;
+    z-index: 200;
+} */
+
+.alert-footer span {
+    padding: 15px 0px;
+}
+
+.dropdown-menu {
+    display: flex;
+
+}
+
+/* Main Content */
 
 main {
     width: 80%;
@@ -365,7 +543,7 @@ main {
     filter: grayscale(100%);
 }
 
-.opacity{
+.opacity {
     opacity: 0.4;
 }
 
