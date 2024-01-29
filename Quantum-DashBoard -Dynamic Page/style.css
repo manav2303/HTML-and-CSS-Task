@@ -40,18 +40,23 @@ header {
 
 .mar-left>span {
     margin-top: 2px;
+    cursor: pointer;
 }
 
 .alert-svg {
     width: 21px;
     height: 24px;
     margin-top: -4px;
+    cursor: pointer;
 }
+
+
 
 .announcements-svg {
     width: 20px;
     height: 20px;
     margin-top: -3px;
+    cursor: pointer;
 }
 
 .profile-photo {
@@ -74,8 +79,9 @@ header {
     right: 137px;
     display: flex;
     flex-direction: column;
-    height: 500px;
+    height: 490px;
     visibility: hidden;
+    transition: visibility 0.3s ease;
 }
 
 .announcemnet-container {
@@ -92,12 +98,17 @@ header {
 .announcemnet {
     font-size: 12px;
     line-height: 15px;
-    height: 64px;
+    height: fit-content;
     padding: 16px;
-    background-color: #FFFFFF;
+    background-color: #FFFFEE;
     border-bottom: 1px solid #2E2E2E;
 }
 
+.class-course-color {
+    margin-bottom: 8px;
+    color: #6E6E6E;
+    font-size: 12px;
+}
 
 .display-flex {
     display: flex;
@@ -189,6 +200,7 @@ header {
     height: 500px;
     width: 315px;
     visibility: hidden;
+    transition: visibility 0.3s ease;
 }
 
 /* Alert dropdown CSS */
@@ -205,7 +217,7 @@ header {
     line-height: 15px;
     height: 91px;
     padding: 16px;
-    background-color: #FFFFFF;
+    background-color: #FFFFEE;
     border-bottom: 1px solid #2E2E2E;
 }
 
@@ -406,6 +418,7 @@ main {
 .simple-flex {
     display: flex;
     justify-content: center;
+    cursor: pointer;
 }
 
 .flex-end {
@@ -544,6 +557,7 @@ main {
 
 .display-none {
     display: none;
+    cursor: pointer;
 }
 
 .not-favorite {
@@ -625,4 +639,128 @@ main {
     .notification-icon {
         margin-left: -60px;
     }
+}
+
+.is-checked {
+    background-color: #FFFFFF;
+}
+
+/* Hamburger Style */
+.hamburger-dropdown-menu {
+    visibility: hidden;
+    flex-direction: column;
+    position: absolute;
+    top: 58px;
+    right: 51px;
+    width: 280px;
+    height: fit-content;
+    background-color: white;
+    box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.1607843137);
+    text-transform: uppercase;
+}
+
+.dropdown-sub:checked+label,
+.dropdown-sub:not(:checked)+label,
+.hamburger-dropdown-menu a {
+    position: relative;
+    color: #1F7A54;
+    transition: all 200ms linear;
+    font-weight: 500;
+    font-size: 14px;
+    height: 48px;
+    padding: 0px 18px 0px 16px;
+    text-align: left;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+}
+
+.dropdown-sub:checked+label {
+    background-color: #F3F3F3;
+}
+
+.dropdown-sub:not(:checked)+label .uil {
+    transition: transform 200ms linear;
+}
+
+.dropdown-sub:checked+label .uil {
+    transform: rotate(180deg);
+    transition: transform 200ms linear;
+}
+
+.dropdown-sub:checked+label:hover,
+.dropdown-sub:not(:checked)+label:hover,
+.hamburger-dropdown-menu a:hover {
+    background-color: #F3F3F3;
+}
+
+.section-dropdown-sub {
+    position: relative;
+    display: block;
+    width: 100%;
+    pointer-events: none;
+    opacity: 0;
+    max-height: 0;
+    overflow: hidden;
+    transition: all 200ms linear;
+}
+
+.section-dropdown-sub a {
+    padding-left: 32px;
+}
+
+.dsc1:checked~.sds1,
+.dsc2:checked~.sds2,
+.dsc3:checked~.sds3,
+.dsc4:checked~.sds4 {
+    pointer-events: auto;
+    opacity: 1;
+    max-height: 999px;
+}
+
+.hamburger-dropdown-menu [type=checkbox]:checked,
+.hamburger-dropdown-menu [type=checkbox]:not(:checked) {
+    position: absolute;
+    left: -9999px;
+    opacity: 0;
+    pointer-events: none;
+}
+
+.alert-svg-hover:hover .dropdown-menu-alert {
+    visibility: visible;
+    opacity: 1;
+    transition: visibility 0.3s ease, opacity 0.3s ease;
+}
+
+.alert-svg-hover .dropdown-menu-alert {
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 0.3s ease, opacity 0.3s ease;
+
+}
+
+.notification-icon.announcements-svg-hover:hover .dropdown-menu-announcemnet {
+    visibility: visible;
+    opacity: 1;
+    transition: visibility 0.3s ease, opacity 0.3s ease;
+}
+
+.notification-icon.announcements-svg-hover .dropdown-menu-announcemnet {
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 0.3s ease, opacity 0.3s ease;
+}
+
+.hamburger-svg-hover:hover .hamburger-dropdown-menu {
+    visibility: visible;
+    opacity: 1;
+    transition: visibility 0.3s ease, opacity 0.3s ease;
+}
+
+.hamburger-svg-hover .hamburger-dropdown-menu {
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 0.3s ease, opacity 0.3s ease;
 }
